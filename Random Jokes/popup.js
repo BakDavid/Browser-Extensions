@@ -170,6 +170,62 @@ Mire apám: Legyen!`,
 Elfoglalják magukat. `,
     `Mért ütközik két repülő?
 Mert egy nem tud.`,
+    `- Érdekes, hogy minden amerikai film végén ugyanaz a felirat van.
+- A stáblistára gondolsz?
+- Nem, Ady Endre.`,
+    `-Jean! Kérem essen nekem egy szamurájkarddal!
+-De miért, Uram?!
+-Mert jóvágású akarok lenni.`,
+    `-Hogy hivják a cukrásztanulók vizsgadolgozatát?
+-???
+-Desszertáció.`,
+    `-Hogy hivják a jós fiát?
+-???
+-Jóska.`,
+    `-Hogy hivják a papok edzőjét?
+-???
+-Tréningatya.`,
+    `-Hogy hivják a süket macskát?
+-???
+-Sehogy, mert úgyse hallja.`,
+    `Az agresszív kismalac áthajt a piroson. Mégállitja a rendőr:
+-Kismalac ez a piros lámpa 5000 lesz.
+-DRÁGA!! Nem kell....`,
+    `-Mi az? Zöld és nehéz lenyelni?
+???
+-Kaktusz!`,
+    `-Doktor úr! Kérem hozzon néhány téglát.
+-De mégis minek??
+-Hogy hamarabb felépülhessek`,
+    `- Miért jó a gél memóriája?
+- Mert ami gél, el nem felejti...`,
+    `-Mi a különbség a kisbaba és a mák között?
+???
+-A mák nem sir ha darálják.`,
+    `-Hol lakik a legtöbb cukiság?
+???
+-Arizónában.`,
+    `-Mit kér a szőkenő a svédasztalnál?
+???
+-Tolmácsot.`,
+    `-Miért zsíros a tej?
+???
+-Hogy ne nyikorogjon a tehén fejés közben.`,
+    `-Mit mondd az egyik fal a másiknak?
+???
+-A sarkon találkozunnk.`,
+    `-Miért hivják a földönkivűlit Alien nek?
+???
+-Mert a földön nem él ilyen!`,
+    `-Hogy hívják az idős bűvészt?
+???
+-Csiri-bá`,
+    `-Áll egy tehén a buszmegállóba.Ha jőn a busz hova száll fel?
+???
+-LEGELŐRE`,
+    `- Miaz?? Sárga és 5 betű?????
+?????
+-Sárga`,
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
