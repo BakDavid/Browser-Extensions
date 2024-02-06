@@ -31,16 +31,16 @@
             .info-bubble {
                 position: absolute;
                 top: 0;
-                right: -20px;
+                right: 0;
                 background-color: #007bff;
                 color: #fff;
                 border-radius: 50%;
-                width: 20px;
-                height: 20px;
+                width: 22px;
+                height: 22px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 12px;
+                font-size: 14px;
                 cursor: pointer;
             }
 
@@ -49,9 +49,12 @@
             }
 
             textarea {
-                width: 100%;
+                width: calc(
+                    100% - 22px
+                ); /* Adjusted width to account for scrollbar width */
                 height: 200px;
                 margin-bottom: 10px;
+                margin-right: 10px; /* Added margin to the right */
                 border: 1px solid #ddd;
                 border-radius: 5px;
                 padding: 10px;
@@ -73,7 +76,6 @@
             }
 
             #cleanedJson {
-                width: 100%;
                 height: 200px;
                 margin-top: 10px;
                 border: 1px solid #ddd;
@@ -92,9 +94,10 @@
                     title="Input dirty JSON body into the first textbox and click Clean JSON to get a correct JSON."
                 ></span>
             </h2>
-            <textarea id="dirtyJson" placeholder="Paste your dirty JSON here">
-{\n  gxJCBWzPlMDNZjyzoBKz: {\n    code: 'PROOFS',\n    subject: 'Printing Proofs for Review - Order ${ORDERID}',\n    label: 'Proofs',\n    message: '<h1>Printing Proofs</h1>\\n' +\n      '<br>\\n' +\n      '<p>${ORDER_SUMMARY}</p>\\n' +\n      '<h4>Your proofs are ready to view</h4>\\n' +\n      '<p>Please click here to ${REVIEW_PROOFS_URL}</p>\\n' +\n      '<br>\\n' +\n      '<h3>Order Status</h3> ${ORDER_STATUS_GRAPHICAL}\\n' +\n      '<br>\\n' +\n      '<!-- <h3>What`s next?</h3> <p> \\t<ul>     \\t<li>If you <strong>APPROVE</strong> this proof, your order will ${ORDERDELIVERYTYPE} in ${DELIVERY_DAYS} days (${ORDERESTIMATEDCOMPLETION})</li>         <li>If you <strong>REQUEST EDITS</strong>, you will be asked to provide updated instructions for the adjustments. One of our friendly designers will contact you and/or will email you with a revised proof promptly.</li>     </ul>     <br> \\t<br> \\t<strong>NEED IT SOONER? Call ${CUSTOMER_SERVICE_TOLLFREE}</strong> </p> -->\\n',\n    _id: 'gxJCBWzPlMDNZjyzoBKz',\n    active: true\n  }\n}"}</textarea
-            >
+            <textarea
+                id="dirtyJson"
+                placeholder="Paste your dirty JSON here"
+            ></textarea>
             <button onclick="cleanJson()">Clean JSON</button>
             <button onclick="copyJson()">Copy</button>
             <button onclick="beautifyJson()">Beautify</button>
