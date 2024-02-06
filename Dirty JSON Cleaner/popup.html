@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JSON Cleaner</title>
+        <link rel="stylesheet" type="text/css" href="popup.css" />
+        <script src="popup.js"></script>
+        <script src="modal.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>
+                JSON Cleaner<span
+                    id="modalTrigger"
+                    class="info-bubble"
+                    title="Input dirty JSON body into the first textbox and click Clean JSON to get a correct JSON."
+                ></span>
+            </h2>
+            <textarea
+                id="dirtyJson"
+                placeholder="Paste your dirty JSON here"
+            ></textarea>
+            <button id="cleanJson">Clean JSON</button>
+            <button id="copyJson">Copy</button>
+            <button id="beautifyJson">Beautify</button>
+            <button id="compressJson">Compress</button>
+            <textarea
+                id="cleanedJson"
+                placeholder="Cleaned JSON will appear here"
+                readonly
+            ></textarea>
+        </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h2>Test JSON Object for Experiment</h2>
+                <textarea id="modalTextarea" readonly>
+{
+  gxJCBWzPlMDNZjyzoBKz: {
+    code: 'PROOFS',
+    subject: 'Printing Proofs for Review - Order ${ORDERID}',
+    label: 'Proofs',
+    message: '<h1>Printing Proofs</h1>\\n' +
+      '<br>\\n' +
+      '<p>${ORDER_SUMMARY}</p>\\n' +
+      '<h4>Your proofs are ready to view</h4>\\n' +
+      '<p>Please click here to ${REVIEW_PROOFS_URL}</p>\\n' +
+      '<br>\\n' +
+      '<h3>Order Status</h3> ${ORDER_STATUS_GRAPHICAL}\\n' +
+      '<br>\\n' +
+      '<!-- <h3>What`s next?</h3> <p> \\t<ul>     \\t<li>If you <strong>APPROVE</strong> this proof, your order will ${ORDERDELIVERYTYPE} in ${DELIVERY_DAYS} days (${ORDERESTIMATEDCOMPLETION})</li>         <li>If you <strong>REQUEST EDITS</strong>, you will be asked to provide updated instructions for the adjustments. One of our friendly designers will contact you and/or will email you with a revised proof promptly.</li>     </ul>     <br> \\t<br> \\t<strong>NEED IT SOONER? Call ${CUSTOMER_SERVICE_TOLLFREE}</strong> </p> -->\\n',
+    _id: 'gxJCBWzPlMDNZjyzoBKz',
+    active: true
+  }
+}</textarea
+                >
+                <button id="copyBtn">Copy</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </body>
+</html>
