@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Random Viccek</title>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JSON Cleaner</title>
+        <link rel="stylesheet" type="text/css" href="popup.css" />
         <script src="popup.js"></script>
     </head>
     <body>
         <div class="container">
+            <h2>
+                JSON Cleaner<span
+                    class="info-bubble"
+                    title="Input dirty JSON body into the first textbox and click Clean JSON to get a correct JSON."
+                ></span>
+            </h2>
             <textarea
-                id="jokeDisplay"
-                class="joke-text"
-                rows="5"
-                cols="30"
+                id="dirtyJson"
+                placeholder="Paste your dirty JSON here"
+            ></textarea>
+            <button id="cleanJson">Clean JSON</button>
+            <button id="copyJson">Copy</button>
+            <button id="beautifyJson">Beautify</button>
+            <button id="compressJson">Compress</button>
+            <textarea
+                id="cleanedJson"
+                placeholder="Cleaned JSON will appear here"
                 readonly
             ></textarea>
-            <button id="generateJoke" class="generate-button">Új Vicc</button>
         </div>
     </body>
 </html>

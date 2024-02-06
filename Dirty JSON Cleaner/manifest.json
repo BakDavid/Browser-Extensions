@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Random Viccek",
+    "name": "Dirty JSON Cleaner",
     "version": "1.0",
-    "description": "Egy Chrome bővítmény véletlenszerű magyar viccek megjelenítéséhez.",
+    "description": "Extension that cleans wrongly formatted json bodies. Fixes problems with \n mainly",
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
