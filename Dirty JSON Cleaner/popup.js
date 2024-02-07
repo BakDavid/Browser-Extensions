@@ -20,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
             step3 = step3.replace(/:\\/g, ":");
             step3 = step3.replace(/,\\/g, ",");
             step3 = step3.replace(/"_/g, "");
+            step3 = step3.replace(/\[Array\]/g, '"[Array]"');
+            step3 = step3.replace(/\[Object\]/g, '"[Object]"');
 
             // Step 4: Encapsulate keys in double quotes
             var step4 = step3.replace(
